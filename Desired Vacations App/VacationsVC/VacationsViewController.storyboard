@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vacations View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="vacations" id="Y6W-OH-hqX" customClass="VacationsViewController" customModule="Desired_Vacations_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-mb-Bgz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="256" id="ht2-TY-dR3" customClass="VacationsTableViewCell" customModule="Desired_Vacations_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="256"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ht2-TY-dR3" id="wWM-Wl-R7S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="keP-lu-1aG">
+                                                    <rect key="frame" x="15" y="15" width="384" height="226"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-ru-LxO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="160"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-e9-o5N">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="160"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="160" id="iVE-Az-xv4"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dpx-iR-m3I">
+                                                            <rect key="frame" x="0.0" y="175" width="384" height="51"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal Beach" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wry-er-u8c">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="25.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel in Gradina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xik-Jx-2Wi">
+                                                                    <rect key="frame" x="0.0" y="25.5" width="384" height="25.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <color key="textColor" name="AccentColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="keP-lu-1aG" secondAttribute="trailing" constant="15" id="2Tv-cM-Lbi"/>
+                                                <constraint firstAttribute="bottom" secondItem="keP-lu-1aG" secondAttribute="bottom" constant="15" id="EfY-ke-Qa0"/>
+                                                <constraint firstItem="keP-lu-1aG" firstAttribute="leading" secondItem="wWM-Wl-R7S" secondAttribute="leading" constant="15" id="sxb-lT-AK1"/>
+                                                <constraint firstItem="keP-lu-1aG" firstAttribute="top" secondItem="wWM-Wl-R7S" secondAttribute="top" constant="15" id="xfA-uY-Ph7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="XnB-ru-LxO" id="Uw7-SL-skO"/>
+                                            <outlet property="locationLabel" destination="xik-Jx-2Wi" id="Piw-p8-kn4"/>
+                                            <outlet property="titleLabel" destination="wry-er-u8c" id="rjb-7w-jcW"/>
+                                            <outlet property="vacationImageView" destination="Mrs-e9-o5N" id="zu1-vk-zrc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qx-ia-riw">
+                                <rect key="frame" x="331" y="804" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <segue destination="g0k-kY-IgW" kind="presentation" identifier="addVacationSegue" id="Id3-FD-5Uj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cL0-mb-Bgz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4sE-6o-keu"/>
+                            <constraint firstAttribute="bottom" secondItem="cL0-mb-Bgz" secondAttribute="bottom" id="8sG-8F-csG"/>
+                            <constraint firstItem="cL0-mb-Bgz" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="N5G-hg-1Yy"/>
+                            <constraint firstItem="cL0-mb-Bgz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="n9s-zB-XLp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="5Qx-ia-riw" id="326-Tf-VMp"/>
+                        <outlet property="tableView" destination="cL0-mb-Bgz" id="HuH-ND-1dY"/>
+                        <segue destination="pUO-P3-DQD" kind="show" identifier="vacationDetailsSegueIdentifier" id="7Lj-3K-p0p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+        <!--AddVacationViewController-->
+        <scene sceneID="bAb-Nk-8R2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddVacationViewController" id="g0k-kY-IgW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxn-oo-IaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="68"/>
+        </scene>
+        <!--VacationDetails-->
+        <scene sceneID="m61-PC-PNi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VacationDetails" id="pUO-P3-DQD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4b0-kX-1Je"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypa-0E-tek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="-46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
