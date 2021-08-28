@@ -41,6 +41,7 @@ class AddVacationViewController: UIViewController{
         cancelButton.layer.cornerRadius = cancelButton.frame.height / 2
         saveButton.layer.borderWidth = 1
         saveButton.layer.borderColor = UIColor.blue.cgColor
+        saveButton.layer.backgroundColor = UIColor.white.cgColor
         saveButton.layer.cornerRadius = cancelButton.frame.height / 2
         imageView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
@@ -52,8 +53,6 @@ class AddVacationViewController: UIViewController{
         dismiss(animated: true)
     }
     @IBAction func save(_ sender: UIButton) {
-        
-        vacationTextField.rightViewMode = .never
         
         vacationTextField.rightViewMode = .never
         locationTextField.rightViewMode = .never
@@ -97,24 +96,6 @@ class AddVacationViewController: UIViewController{
             
             self.present(imagePicker, animated: true, completion: nil)
             
-//                switch status {
-//                case .authorized:
-//                    let myPickerController = UIImagePickerController()
-//                    myPickerController.sourceType = .photoLibrary
-//                    self.present(myPickerController, animated: true)
-//                default:
-//                    break
-//                case .notDetermined:
-//                    <#code#>
-//                case .restricted:
-//                    <#code#>
-//                case .denied:
-//                    <#code#>
-//                case .limited:
-//                    <#code#>
-//                @unknown default:
-//                    <#code#>
-                //}
             }
         }
     }

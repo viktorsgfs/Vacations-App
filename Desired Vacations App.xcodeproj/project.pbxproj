@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3CF1ED3B26D37F0C004CC529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED3A26D37F0C004CC529 /* AppDelegate.swift */; };
 		3CF1ED3D26D37F0C004CC529 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED3C26D37F0C004CC529 /* SceneDelegate.swift */; };
-		3CF1ED4526D37F0C004CC529 /* Desired_Vacations_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED4326D37F0C004CC529 /* Desired_Vacations_App.xcdatamodeld */; };
 		3CF1ED4726D37F10004CC529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1ED4626D37F10004CC529 /* Assets.xcassets */; };
 		3CF1ED4A26D37F10004CC529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1ED4826D37F10004CC529 /* LaunchScreen.storyboard */; };
 		3CF1ED5926D38D7F004CC529 /* VacationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED5826D38D7F004CC529 /* VacationsViewController.swift */; };
@@ -17,18 +16,22 @@
 		3CF1ED5D26D4FD14004CC529 /* VacationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED5C26D4FD14004CC529 /* VacationsTableViewCell.swift */; };
 		3CF1ED5F26D50C34004CC529 /* AddVacationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1ED5E26D50C34004CC529 /* AddVacationViewController.storyboard */; };
 		3CF1ED6226D50C9B004CC529 /* AddVacationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6126D50C9B004CC529 /* AddVacationViewController.swift */; };
-		3CF1ED6426D5313D004CC529 /* VacationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6326D5313D004CC529 /* VacationModel.swift */; };
-		3CF1ED6726D668E8004CC529 /* DesiredVacation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6526D668E8004CC529 /* DesiredVacation+CoreDataClass.swift */; };
-		3CF1ED6826D668E8004CC529 /* DesiredVacation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6626D668E8004CC529 /* DesiredVacation+CoreDataProperties.swift */; };
 		3CF1ED6B26D690CA004CC529 /* VacationDetailsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6A26D690CA004CC529 /* VacationDetailsListViewController.swift */; };
 		3CF1ED6D26D690F6004CC529 /* VacationDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6C26D690F6004CC529 /* VacationDetails.storyboard */; };
+		3CF1ED7026D90D69004CC529 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED6F26D90D68004CC529 /* ReminderViewController.swift */; };
+		3CF1ED7226D90DA9004CC529 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1ED7126D90DA9004CC529 /* Reminder.storyboard */; };
+		3CF1ED7526D92C05004CC529 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED7426D92C05004CC529 /* AddReminderViewController.swift */; };
+		3CF1ED7E26DA6414004CC529 /* DesiredVacation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED7A26DA6414004CC529 /* DesiredVacation+CoreDataClass.swift */; };
+		3CF1ED7F26DA6414004CC529 /* DesiredVacation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED7B26DA6414004CC529 /* DesiredVacation+CoreDataProperties.swift */; };
+		3CF1ED8C26DA6953004CC529 /* Desired_Vacations_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED8A26DA6953004CC529 /* Desired_Vacations_App.xcdatamodeld */; };
+		3CF1ED9326DA69D4004CC529 /* Reminder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED9126DA69D4004CC529 /* Reminder+CoreDataClass.swift */; };
+		3CF1ED9426DA69D4004CC529 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1ED9226DA69D4004CC529 /* Reminder+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CF1ED3726D37F0C004CC529 /* Desired Vacations App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desired Vacations App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF1ED3A26D37F0C004CC529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF1ED3C26D37F0C004CC529 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3CF1ED4426D37F0C004CC529 /* Desired_Vacations_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Desired_Vacations_App.xcdatamodel; sourceTree = "<group>"; };
 		3CF1ED4626D37F10004CC529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CF1ED4926D37F10004CC529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CF1ED4B26D37F10004CC529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,11 +40,16 @@
 		3CF1ED5C26D4FD14004CC529 /* VacationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsTableViewCell.swift; sourceTree = "<group>"; };
 		3CF1ED5E26D50C34004CC529 /* AddVacationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddVacationViewController.storyboard; sourceTree = "<group>"; };
 		3CF1ED6126D50C9B004CC529 /* AddVacationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacationViewController.swift; sourceTree = "<group>"; };
-		3CF1ED6326D5313D004CC529 /* VacationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationModel.swift; sourceTree = "<group>"; };
-		3CF1ED6526D668E8004CC529 /* DesiredVacation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3CF1ED6626D668E8004CC529 /* DesiredVacation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3CF1ED6A26D690CA004CC529 /* VacationDetailsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationDetailsListViewController.swift; sourceTree = "<group>"; };
 		3CF1ED6C26D690F6004CC529 /* VacationDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VacationDetails.storyboard; sourceTree = "<group>"; };
+		3CF1ED6F26D90D68004CC529 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		3CF1ED7126D90DA9004CC529 /* Reminder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
+		3CF1ED7426D92C05004CC529 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		3CF1ED7A26DA6414004CC529 /* DesiredVacation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3CF1ED7B26DA6414004CC529 /* DesiredVacation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3CF1ED8B26DA6953004CC529 /* Desired_Vacations_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Desired_Vacations_App.xcdatamodel; sourceTree = "<group>"; };
+		3CF1ED9126DA69D4004CC529 /* Reminder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3CF1ED9226DA69D4004CC529 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3CF1ED3926D37F0C004CC529 /* Desired Vacations App */,
+				3CF1ED8A26DA6953004CC529 /* Desired_Vacations_App.xcdatamodeld */,
 				3CF1ED3826D37F0C004CC529 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +83,8 @@
 		3CF1ED3926D37F0C004CC529 /* Desired Vacations App */ = {
 			isa = PBXGroup;
 			children = (
+				3CF1ED7326D92BEC004CC529 /* AddReminder */,
+				3CF1ED6E26D90D4F004CC529 /* ReminderVC */,
 				3CF1ED6926D69093004CC529 /* VacationDetailsVC */,
 				3CF1ED6026D50C4B004CC529 /* AddVacationVC */,
 				3CF1ED5726D38CD6004CC529 /* VacationsVC */,
@@ -83,8 +94,6 @@
 				3CF1ED3C26D37F0C004CC529 /* SceneDelegate.swift */,
 				3CF1ED4626D37F10004CC529 /* Assets.xcassets */,
 				3CF1ED4B26D37F10004CC529 /* Info.plist */,
-				3CF1ED4326D37F0C004CC529 /* Desired_Vacations_App.xcdatamodeld */,
-				3CF1ED6326D5313D004CC529 /* VacationModel.swift */,
 			);
 			path = "Desired Vacations App";
 			sourceTree = "<group>";
@@ -100,8 +109,10 @@
 		3CF1ED5626D3846E004CC529 /* Core Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				3CF1ED6526D668E8004CC529 /* DesiredVacation+CoreDataClass.swift */,
-				3CF1ED6626D668E8004CC529 /* DesiredVacation+CoreDataProperties.swift */,
+				3CF1ED9126DA69D4004CC529 /* Reminder+CoreDataClass.swift */,
+				3CF1ED9226DA69D4004CC529 /* Reminder+CoreDataProperties.swift */,
+				3CF1ED7A26DA6414004CC529 /* DesiredVacation+CoreDataClass.swift */,
+				3CF1ED7B26DA6414004CC529 /* DesiredVacation+CoreDataProperties.swift */,
 			);
 			path = "Core Data Model";
 			sourceTree = "<group>";
@@ -132,6 +143,23 @@
 				3CF1ED6C26D690F6004CC529 /* VacationDetails.storyboard */,
 			);
 			path = VacationDetailsVC;
+			sourceTree = "<group>";
+		};
+		3CF1ED6E26D90D4F004CC529 /* ReminderVC */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1ED6F26D90D68004CC529 /* ReminderViewController.swift */,
+				3CF1ED7126D90DA9004CC529 /* Reminder.storyboard */,
+			);
+			path = ReminderVC;
+			sourceTree = "<group>";
+		};
+		3CF1ED7326D92BEC004CC529 /* AddReminder */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1ED7426D92C05004CC529 /* AddReminderViewController.swift */,
+			);
+			path = AddReminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +224,7 @@
 			files = (
 				3CF1ED5F26D50C34004CC529 /* AddVacationViewController.storyboard in Resources */,
 				3CF1ED5B26D4D3B2004CC529 /* VacationsViewController.storyboard in Resources */,
+				3CF1ED7226D90DA9004CC529 /* Reminder.storyboard in Resources */,
 				3CF1ED4A26D37F10004CC529 /* LaunchScreen.storyboard in Resources */,
 				3CF1ED6D26D690F6004CC529 /* VacationDetails.storyboard in Resources */,
 				3CF1ED4726D37F10004CC529 /* Assets.xcassets in Resources */,
@@ -211,14 +240,17 @@
 			files = (
 				3CF1ED6B26D690CA004CC529 /* VacationDetailsListViewController.swift in Sources */,
 				3CF1ED5D26D4FD14004CC529 /* VacationsTableViewCell.swift in Sources */,
-				3CF1ED6826D668E8004CC529 /* DesiredVacation+CoreDataProperties.swift in Sources */,
-				3CF1ED6426D5313D004CC529 /* VacationModel.swift in Sources */,
-				3CF1ED4526D37F0C004CC529 /* Desired_Vacations_App.xcdatamodeld in Sources */,
+				3CF1ED7526D92C05004CC529 /* AddReminderViewController.swift in Sources */,
 				3CF1ED3B26D37F0C004CC529 /* AppDelegate.swift in Sources */,
+				3CF1ED7F26DA6414004CC529 /* DesiredVacation+CoreDataProperties.swift in Sources */,
 				3CF1ED3D26D37F0C004CC529 /* SceneDelegate.swift in Sources */,
+				3CF1ED7E26DA6414004CC529 /* DesiredVacation+CoreDataClass.swift in Sources */,
 				3CF1ED5926D38D7F004CC529 /* VacationsViewController.swift in Sources */,
+				3CF1ED7026D90D69004CC529 /* ReminderViewController.swift in Sources */,
+				3CF1ED9426DA69D4004CC529 /* Reminder+CoreDataProperties.swift in Sources */,
+				3CF1ED9326DA69D4004CC529 /* Reminder+CoreDataClass.swift in Sources */,
 				3CF1ED6226D50C9B004CC529 /* AddVacationViewController.swift in Sources */,
-				3CF1ED6726D668E8004CC529 /* DesiredVacation+CoreDataClass.swift in Sources */,
+				3CF1ED8C26DA6953004CC529 /* Desired_Vacations_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,13 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3CF1ED4326D37F0C004CC529 /* Desired_Vacations_App.xcdatamodeld */ = {
+		3CF1ED8A26DA6953004CC529 /* Desired_Vacations_App.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3CF1ED4426D37F0C004CC529 /* Desired_Vacations_App.xcdatamodel */,
+				3CF1ED8B26DA6953004CC529 /* Desired_Vacations_App.xcdatamodel */,
 			);
-			currentVersion = 3CF1ED4426D37F0C004CC529 /* Desired_Vacations_App.xcdatamodel */;
-			path = Desired_Vacations_App.xcdatamodeld;
+			currentVersion = 3CF1ED8B26DA6953004CC529 /* Desired_Vacations_App.xcdatamodel */;
+			name = Desired_Vacations_App.xcdatamodeld;
+			path = "Desired Vacations App/Desired_Vacations_App.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

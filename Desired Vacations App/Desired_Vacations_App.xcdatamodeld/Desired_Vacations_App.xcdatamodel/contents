@@ -9,7 +9,13 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="necessary_money" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Reminder" representedClassName="Reminder" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="DesiredVacation" positionX="-63" positionY="-18" width="128" height="14"/>
+        <element name="Reminder" positionX="-54" positionY="-18" width="128" height="74"/>
     </elements>
 </model>

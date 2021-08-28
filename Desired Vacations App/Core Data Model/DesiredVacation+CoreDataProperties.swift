@@ -2,7 +2,7 @@
 //  DesiredVacation+CoreDataProperties.swift
 //  Desired Vacations App
 //
-//  Created by Synergy on 25.08.21.
+//  Created by Synergy on 28.08.21.
 //
 //
 

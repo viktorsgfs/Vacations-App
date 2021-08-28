@@ -8,20 +8,184 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vacation Details List View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="VacationDetailsListViewController" customModule="Desired_Vacations_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-tP-TWx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TNg-Qw-u6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Jdo-fw-Kvf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="exV-8q-gqS">
+                                <rect key="frame" x="12" y="252" width="390" height="325"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-ee-q8v">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hF-4s-3E4">
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="35"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3db-ER-rBY">
+                                                <rect key="frame" x="202" y="0.0" width="188" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Edit title"/>
+                                                <connections>
+                                                    <action selector="titleEditAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X6a-A6-x83"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-h4-u6H">
+                                        <rect key="frame" x="0.0" y="58" width="390" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AC-h6-kJm">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwd-xW-hAj">
+                                                <rect key="frame" x="281" y="0.0" width="109" height="35"/>
+                                                <state key="normal" title="Add description"/>
+                                                <connections>
+                                                    <action selector="editDescription:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aFb-zj-y3X"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="YhF-fo-Fvz">
+                                        <rect key="frame" x="0.0" y="116" width="390" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Necessary money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-ro-2Sl">
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-Bb-rDf">
+                                                <rect key="frame" x="202" y="0.0" width="188" height="35"/>
+                                                <state key="normal" title="Add money"/>
+                                                <connections>
+                                                    <action selector="addMoney:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dgp-bY-A0J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="2yo-2G-UOC">
+                                        <rect key="frame" x="0.0" y="174" width="390" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkH-x8-xSB">
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u8-9i-C2i">
+                                                <rect key="frame" x="202" y="0.0" width="188" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Add Hotel"/>
+                                                <connections>
+                                                    <action selector="editHotelAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eEd-uE-m8c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="DbI-s6-LBd">
+                                        <rect key="frame" x="0.0" y="232" width="390" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmB-Nb-sMN">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n42-zU-fyp">
+                                                <rect key="frame" x="266" y="0.0" width="124" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Change location"/>
+                                                <connections>
+                                                    <action selector="changeLocation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QbW-tN-ii6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="zvt-wX-W7w">
+                                        <rect key="frame" x="0.0" y="290" width="390" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwe-Pa-qdr">
+                                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="35"/>
+                                                <state key="normal" title="Change image"/>
+                                                <connections>
+                                                    <action selector="changePhoto:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NXO-iU-aSs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcx-8Z-Pzu">
+                                                <rect key="frame" x="206.5" y="0.0" width="183.5" height="35"/>
+                                                <state key="normal" title="Reminders"/>
+                                                <connections>
+                                                    <action selector="goToReminders:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EQB-Um-hPO"/>
+                                                    <segue destination="mXn-i4-Pqg" kind="show" identifier="remindersSegue" id="feE-pe-isf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="exV-8q-gqS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8N4-W4-kY9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PKs-tP-TWx" secondAttribute="trailing" id="QFn-9r-EcI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="exV-8q-gqS" secondAttribute="trailing" constant="12" id="RjW-1t-mHy"/>
+                            <constraint firstItem="PKs-tP-TWx" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="U2a-1v-sUC"/>
+                            <constraint firstItem="PKs-tP-TWx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="awN-NT-wyb"/>
+                            <constraint firstItem="exV-8q-gqS" firstAttribute="top" secondItem="PKs-tP-TWx" secondAttribute="bottom" constant="2" id="jnB-rE-TxB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeImageButton" destination="pwe-Pa-qdr" id="kh4-Vs-jyF"/>
+                        <outlet property="descriptionButton" destination="iwd-xW-hAj" id="p4L-O9-vdx"/>
+                        <outlet property="hotelButton" destination="2u8-9i-C2i" id="B9K-xx-Sqq"/>
+                        <outlet property="hotelLabel" destination="QkH-x8-xSB" id="H2g-jS-gEb"/>
+                        <outlet property="locationButton" destination="n42-zU-fyp" id="Fk3-5r-HNh"/>
+                        <outlet property="locationLabel" destination="UmB-Nb-sMN" id="Zix-fQ-yNk"/>
+                        <outlet property="locationText" destination="UmB-Nb-sMN" id="dz4-j4-NGp"/>
+                        <outlet property="moneyAmount" destination="9gA-ro-2Sl" id="ZwD-HV-dDX"/>
+                        <outlet property="moneyButton" destination="xXq-Bb-rDf" id="2TT-xo-XgU"/>
+                        <outlet property="photoView" destination="TNg-Qw-u6a" id="7mp-ng-Z4x"/>
+                        <outlet property="subtitileLabel" destination="8AC-h6-kJm" id="JMw-Mj-k0s"/>
+                        <outlet property="titleButton" destination="3db-ER-rBY" id="kvR-1V-8U3"/>
+                        <outlet property="titleLabel" destination="0hF-4s-3E4" id="8tE-Zp-IRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="51"/>
+            <point key="canvasLocation" x="37.681159420289859" y="50.892857142857139"/>
+        </scene>
+        <!--Reminder-->
+        <scene sceneID="Yzg-Pw-XHx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Reminder" id="mXn-i4-Pqg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dwB-oO-tB1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1R-Vp-JjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="51"/>
         </scene>
     </scenes>
     <resources>

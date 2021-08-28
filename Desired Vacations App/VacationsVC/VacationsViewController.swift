@@ -23,7 +23,7 @@ class VacationsViewController: UIViewController {
     
     var items = [DesiredVacation]()
     var vacationToRemove: DesiredVacation?
-    
+    var selectedVacation: DesiredVacation?
     
     override func viewDidLoad() {
         
@@ -56,7 +56,16 @@ class VacationsViewController: UIViewController {
             popup.saveData = popupSave
         }
         if segue.identifier == "vacationDetailsSegueIdentifier" {
-            guard let vc = segue.destination as? VacationDetailsListViewController else { return }
+             let vc = segue.destination as? VacationDetailsListViewController
+            let popupSave = {
+                self.fetchVacations()
+            }
+            
+            vc?.vacation = selectedVacation
+            vc?.saveData = popupSave
+            vc?.money = String(selectedVacation?.necessary_money ?? 0)
+            //vc?.saveData = popupSave
+            
             
         }
     }
@@ -86,16 +95,6 @@ class VacationsViewController: UIViewController {
         }
         self.fetchVacations()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -143,6 +142,9 @@ extension VacationsViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //print(items)
+        
+         selectedVacation = self.items[indexPath.row]
         performSegue(withIdentifier: Constants.vacationDetailsSegueIdentifier, sender: self)
     }
 }
